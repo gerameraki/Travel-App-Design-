@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border" translucent="true">
+  <ion-toolbar color="ion-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button text="Atrás" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tu próximo viaje será...</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card color="danger" *ngFor= "let viaje of viajes">
+    <ion-card-header>
+      <ion-card-subtitle>{{viaje.subtitle}}</ion-card-subtitle>
+      <img [src]="viaje.img">
+      <ion-card-title>{{viaje.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>{{viaje.content}}</ion-card-content>
+
+    <div class="seccionDeComprar">
+      <div class="cajaMagica">
+        <div class="tuViaje">
+          <ion-label>Tu viaje incluye</ion-label>
+        </div>
+        <div slot="start" class="incluye">
+          <ion-icon size="large" name="bed"> </ion-icon>
+          <ion-icon size="large" name="restaurant"> </ion-icon>
+          <ion-icon size="large" name="airplane"> </ion-icon>
+        </div>
+      </div>
+      <div class="reservar">
+        <ion-button (click)="presentAlert()" slot="end"color="dark" fill="outline" size="large">Reservar ahora</ion-button>
+      </div>
+    </div>
+  </ion-card>
+
+</ion-content>

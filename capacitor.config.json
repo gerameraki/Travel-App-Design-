@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "app",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "merakideveloper.travel.com",
+  "appName": "App Viajes",
+  "webDir": "www",
+  "bundledWebRuntime": false
 }

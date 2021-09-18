@@ -1,0 +1,25 @@
+ion-slide {
+    display: block;
+}
+
+.slide-img-padding {
+    padding: 100px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 130px;
+}
+
+.btn {
+    height: 60px;
+}
+.buttons {
+    margin-bottom: 30px;
+}
+
+ion-slides {
+    --bullet-background: grey;
+    --bullet-background-active: #8890b2;
+}
